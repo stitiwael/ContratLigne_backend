@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.example.demo.entities;
 
 import java.time.LocalDate;
 
@@ -23,13 +23,13 @@ public class Contrat {
 	private int id ; 
 	
 	@Column(unique = true)
-	private String code_contrat;
+	private String codeContrat;
 	
-	private LocalDate date_debut;
+	private LocalDate dateDebut;
 	
-	private LocalDate date_fin;
+	private LocalDate dateFin;
 	
-	private String type_contrat;
+	private String typeContrat;
 	
 	
 	@JsonIgnore

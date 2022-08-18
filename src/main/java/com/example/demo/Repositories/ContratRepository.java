@@ -1,8 +1,8 @@
-package com.example.demo.Repositories;
+package com.example.demo.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.Entities.Contrat;
+import com.example.demo.entities.Contrat;
 
 public interface ContratRepository extends JpaRepository<Contrat, Integer> {
 

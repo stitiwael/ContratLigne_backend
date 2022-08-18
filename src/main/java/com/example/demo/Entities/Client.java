@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.example.demo.entities;
 
 import java.util.List;
 
@@ -22,9 +22,9 @@ public class Client {
 	
 	private String adresse;
 	
-	private String last_name;
+	private String lastName;
 	
-	private String phone_number;
+	private String phoneNumber;
 	
 	@OneToMany(mappedBy = "client")
 	private List<Contrat> list_contrats;

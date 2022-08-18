@@ -1,4 +1,4 @@
-package com.example.demo.Controllers;
+package com.example.demo.controllers;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Entities.TestEntity;
-import com.example.demo.Services.TestService;
+import com.example.demo.entities.TestEntity;
+import com.example.demo.services.TestService;
 
 import lombok.AllArgsConstructor;
 

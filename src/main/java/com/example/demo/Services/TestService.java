@@ -1,4 +1,4 @@
-package com.example.demo.Services;
+package com.example.demo.services;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -7,8 +7,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Entities.TestEntity;
-import com.example.demo.Repositories.TestRepository;
+import com.example.demo.entities.TestEntity;
+import com.example.demo.repositories.TestRepository;
 
 import lombok.AllArgsConstructor;
 
