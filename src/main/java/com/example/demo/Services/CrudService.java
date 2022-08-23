@@ -43,6 +43,7 @@ public class CrudService {
 	public Client createclient(Client c) {
 
 		return clientRepo.save(c);
+		
 	}
 
 	public Client getClientbyname(String name) {
