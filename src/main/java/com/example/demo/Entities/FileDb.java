@@ -1,6 +1,7 @@
 package com.example.demo.entities;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -16,8 +17,6 @@ import lombok.Data;
 @Table(name = "Files")
 public class FileDb {
 	
-	
-	
 	@Id
 	private String id;
 	
@@ -30,8 +29,8 @@ public class FileDb {
 	
 	private String dateDeCreation;
 	
-
-
+    @OneToMany(mappedBy = "file")
+    private List<FileVersion> fileVersions = new ArrayList<>();
 	
 
 	public FileDb() {
