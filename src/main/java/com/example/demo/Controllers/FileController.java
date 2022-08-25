@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.demo.dtoModels.FileVersionMetadataDto;
 import com.example.demo.entities.FileDb;
+import com.example.demo.entities.FileVersionMetadata;
 import com.example.demo.services.CrudService;
 import com.example.demo.services.FileService;
 
@@ -36,6 +38,15 @@ public class FileController {
 		
 		return fileService.uploadFile(file);
 		
+	}
+	
+	@PostMapping("/file/add/metadata")
+	public FileVersionMetadata addMetadata(@RequestBody List<FileVersionMetadataDto> fvmd) {
+		for(int i = 0 ; i<= fvmd.size() - 1; i++) {
+		fileService.addMetadata(fvmd.get(i));
+		}
+		
+		return null;
 	}
 	
 	@GetMapping("/file/getall")
